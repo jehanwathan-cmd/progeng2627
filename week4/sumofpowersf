@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+
+int sop(int a, int b) {
+    int val = 0;
+    std::cin >> a >> b;
+    for (int i = 1; i < a+1; i++) {
+        val = std::pow(a, i) + val;
+    }
+    
+    return val;
+}
+
+int main() {
+    int x, n;
+    std::cin >> x >> n;
+    std::cout << "sum: " << sop(x, n);
+}
